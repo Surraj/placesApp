@@ -1,5 +1,7 @@
 {
   "name": "placesApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

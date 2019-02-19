@@ -1,0 +1,25 @@
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-title>Register</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<form>
+		<ion-item>
+			<ion-label position="floating">Username</ion-label>
+			<ion-input [(ngModel)]="data.username" name ="username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating" >Password</ion-label>
+			<ion-input type="password" [(ngModel)] = "data.password" name="password"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="floating" >Confirm Password</ion-label>
+			<ion-input type="password" [(ngModel)] = "data.confirmPassword" name="confirmPassword"></ion-input>
+		</ion-item>
+		<ion-button expand="full" color="secondary" (click)="registerUser()">Register</ion-button>
+
+	</form>
+
+</ion-content>

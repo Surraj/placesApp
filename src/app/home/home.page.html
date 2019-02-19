@@ -1,12 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+  <ion-toolbar color="warning">
+    <ion-title color="dark">
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <h1>Welcome to this App!</h1>
+  <img src="http://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/03/visit-Seoul-South-Korea-in-may.jpg" style="border-radius: 10%">
+  <ion-button expand="full" [routerLink]="['/', 'login']">Login</ion-button>
+  <ion-button expand="full" color="secondary" [routerLink]="['/', 'register']">Register</ion-button>
+
 </ion-content>

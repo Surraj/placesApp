@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Places</ion-title>
+    <ion-buttons slot="end">
+      <ion-button ion-button icon-only [routerLink]="['/', 'add-place']" >
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+
+ <ion-list>
+   <ion-item button *ngFor = "let item of (results | async)" [routerLink]="['/', 'places', item._id]">
+
+    <ion-label text-wrap>	
+      <h1 style="font-family: roboto">{{ item.name }}</h1>
+      <h3 style="font-family: sans-serif; font-weight: bold;">{{ item.description }}</h3>
+      <h4>{{item.country}}</h4>
+    </ion-label>
+
+  </ion-item>
+
+</ion-list>
+
+</ion-content>
